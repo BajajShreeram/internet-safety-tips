@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Safety Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffeb3b; /* Yellow background */
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            text-align: left;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="radio"] {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Internet Safety Quiz</h1>
+    <form id="quizForm">
+        <p>1. Is it safe to share your password with a friend?</p>
+        <input type="radio" id="yes1" name="q1" value="yes">
+        <label for="yes1">Yes</label><br>
+        <input type="radio" id="no1" name="q1" value="no">
+        <label for="no1">No</label><br>
+
+        <p>2. Should you ignore messages from strangers?</p>
+        <input type="radio" id="yes2" name="q2" value="yes">
+        <label for="yes2">Yes</label><br>
+        <input type="radio" id="no2" name="q2" value="no">
+        <label for="no2">No</label><br>
+
+        <p>3. Is it unsafe to download files from unknown websites?</p>
+        <input type="radio" id="safe3" name="q3" value="safe">
+        <label for="safe3">Yes</label><br>
+        <input type="radio" id="unsafe3" name="q3" value="unsafe">
+        <label for="unsafe3">No</label><br>
+
+        <p>4. Should you report bullying or harmful content you see online?</p>
+        <input type="radio" id="report4" name="q4" value="report">
+        <label for="report4">Yes</label><br>
+        <input type="radio" id="notreport4" name="q4" value="notreport">
+        <label for="notreport4">No</label><br>
+
+        <p>5. Should you tell an adult before meeting someone you've only met online?</p>
+        <input type="radio" id="yes5" name="q5" value="yes">
+        <label for="yes5">Yes</label><br>
+        <input type="radio" id="no5" name="q5" value="no">
+        <label for="no5">No</label><br>
+
+        <p>6. Can you trust every link you receive in an email?</p>
+        <input type="radio" id="yes6" name="q6" value="yes">
+        <label for="yes6">Yes</label><br>
+        <input type="radio" id="no6" name="q6" value="no">
+        <label for="no6">No</label><br>
+
+        <p>7. Is it safe to give out your home address online?</p>
+        <input type="radio" id="yes7" name="q7" value="yes">
+        <label for="yes7">Yes</label><br>
+        <input type="radio" id="no7" name="q7" value="no">
+        <label for="no7">No</label><br>
+
+        <p>8. Should you tell an adult if something online makes you uncomfortable?</p>
+        <input type="radio" id="yes8" name="q8" value="yes">
+        <label for="yes8">Yes</label><br>
+        <input type="radio" id="no8" name="q8" value="no">
+        <label for="no8">No</label><br>
+
+        <p>9. Is it unsafe to share your personal information online?</p>
+        <input type="radio" id="safe9" name="q9" value="safe">
+        <label for="safe9">Yes</label><br>
+        <input type="radio" id="unsafe9" name="q9" value="unsafe">
+        <label for="unsafe9">No</label><br>
+
+        <p>10. Should you always log out of your accounts on public computers?</p>
+        <input type="radio" id="yes10" name="q10" value="yes">
+        <label for="yes10">Yes</label><br>
+        <input type="radio" id="no10" name="q10" value="no">
+        <label for="no10">No</label><br>
+
+        <p>11. Is it safe to download apps from unknown sources?</p>
+        <input type="radio" id="yes11" name="q11" value="yes">
+        <label for="yes11">Yes</label><br>
+        <input type="radio" id="no11" name="q11" value="no">
+        <label for="no11">No</label><br>
+
+        <p>12. Should you ask an adult before making online purchases?</p>
+        <input type="radio" id="yes12" name="q12" value="yes">
+        <label for="yes12">Yes</label><br>
+        <input type="radio" id="no12" name="q12" value="no">
+        <label for="no12">No</label><br>
+
+        <p>13. Can you trust everyone you meet online?</p>
+        <input type="radio" id="yes13" name="q13" value="yes">
+        <label for="yes13">Yes</label><br>
+        <input type="radio" id="no13" name="q13" value="no">
+        <label for="no13">No</label><br>
+
+        <p>14. Is it important to have a unique password for each account?</p>
+        <input type="radio" id="yes14" name="q14" value="yes">
+        <label for="yes14">Yes</label><br>
+        <input type="radio" id="no14" name="q14" value="no">
+        <label for="no14">No</label><br>
+
+        <p>15. Should you keep your software updated for security?</p>
+        <input type="radio" id="yes15" name="q15" value="yes">
+        <label for="yes15">Yes</label><br>
+        <input type="radio" id="no15" name="q15" value="no">
+        <label for="no15">No</label><br>
+
+        <p>16. Is it safe to post photos of yourself online?</p>
+        <input type="radio" id="yes16" name="q16" value="yes">
+        <label for="yes16">Yes</label><br>
+        <input type="radio" id="no16" name="q16" value="no">
+        <label for="no16">No</label><br>
+
+        <p>17. Should you ignore any pop-up ads that appear on your screen?</p>
+        <input type="radio" id="yes17" name="q17" value="yes">
+        <label for="yes17">Yes</label><br>
+        <input type="radio" id="no17" name="q17" value="no">
+        <label for="no17">No</label><br>
+
+        <p>18. Should you download files from a website that looks suspicious?</p>
+        <input type="radio" id="safe18" name="q18" value="safe">
+        <label for="safe18">Yes</label><br>
+        <input type="radio" id="unsafe18" name="q18" value="unsafe">
+        <label for="unsafe18">No</label><br>
+
+        <p>19. Should you ask your parents before installing new software or apps?</p>
+        <input type="radio" id="yes19" name="q19" value="yes">
+        <label for="yes19">Yes</label><br>
+        <input type="radio" id="no19" name="q19" value="no">
+        <label for="no19">No</label><br>
+
+        <p>20. Is it important to talk to an adult about your online experiences?</p>
+        <input type="radio" id="yes20" name="q20" value="yes">
+        <label for="yes20">Yes</label><br>
+        <input type="radio" id="no20" name="q20" value="no">
+        <label for="no20">No</label><br>
+
+        <p>21. Should you keep your online accounts private?</p>
+        <input type="radio" id="yes21" name="q21" value="yes">
+        <label for="yes21">Yes</label><br>
+        <input type="radio" id="no21" name="q21" value="no">
+        <label for="no21">No</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+
+    <a href="index.html">Go back to Tips</a>
+
+    <script>
+        const correctAnswers = {
+            q1: 'no', q2: 'yes', q3: 'safe', q4: 'report', q5: 'yes', 
+            q6: 'no', q7: 'no', q8: 'yes', q9: 'safe', q10: 'yes',
+            q11: 'no', q12: 'yes', q13: 'no', q14: 'yes', q15: 'yes',
+            q16: 'no', q17: 'yes', q18: 'no', q19: 'yes', q20: 'yes',
+            q21: 'yes'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let score = 0;
+
+            const formData = new FormData(this);
+            for (const [key, value] of formData.entries()) {
+                if (value === correctAnswers[key]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('result').innerText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
+        });
+    </script>
+</body>
+</html>
